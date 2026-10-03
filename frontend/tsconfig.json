@@ -1,0 +1,18 @@
+{
+  // Type-checks everything. Vite (esbuild) does the actual TS -> JS compile and bundling,
+  // so TypeScript itself only checks: "noEmit".
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",   // the bundler resolves imports, so no ".js" extensions needed here
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["vite/client"]
+  },
+  "include": ["src", "tests", "vite.config.ts"]
+}

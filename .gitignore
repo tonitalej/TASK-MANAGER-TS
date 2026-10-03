@@ -1,0 +1,15 @@
+# Secrets: never commit any .env file (the .env.example templates are fine)
+.env
+.env.*
+!.env.example
+
+node_modules/
+dist/
+coverage/
+*.log
+
+# Local AI/agent tooling and generated test output
+.agent/
+.agents/
+skills-lock.json
+test_output.txt

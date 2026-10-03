@@ -1,0 +1,18 @@
+{
+  // Used by the editor and by "npm run typecheck": checks src, tests AND scripts, emits nothing.
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",            // real Node ESM rules: relative imports need the ".js" extension
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "esModuleInterop": true,         // lets us write: import bcrypt from 'bcrypt' (a CommonJS package)
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": ["src", "tests", "scripts"]
+}
