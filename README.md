@@ -10,7 +10,7 @@ A small multi-user task manager: each user registers, logs in, and manages **the
 ## Architecture
 
 ```
-Browser: React app (frontend/)
+
    |  fetch  /api/...  with  Authorization: Bearer <JWT>
    v
 Express API (backend/src)
